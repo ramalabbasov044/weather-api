@@ -9,13 +9,13 @@ search.addEventListener("input",function(e){
 
 async function findCountryWeather(key){
     const url = 'https://weatherapi-com.p.rapidapi.com/forecast.json?q=' + `${key}`;
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '9076eac4a5msha9000f7a84a1cb1p112ed6jsn13542991e11b',
-		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-	}
-};
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '9076eac4a5msha9000f7a84a1cb1p112ed6jsn13542991e11b',
+            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+        }
+    };
     try {
         const response = await fetch(url, options);
         const result = await response.json();
@@ -35,6 +35,7 @@ const options = {
                 </div>
                 <div class="weather-img">
                     <div>
+                        <p class="temprature_text">${result.current.condition.text}</p>
                         <img src='${result.current.condition.icon}' />
                     </div>
                     <p class="weather-temprature">
@@ -43,7 +44,7 @@ const options = {
                 </div>
             </div>
         `
-    } catch (error) {
+    }catch (error) {
         console.log(error);
     }
 }

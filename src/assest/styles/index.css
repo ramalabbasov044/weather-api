@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     object-fit: cover;
     height: 99vh;
-    padding: 100px;
+    padding: 40px;
 }
 
 .weather_body{
@@ -109,4 +109,19 @@
     font-size: 70px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.88);
+}
+.temprature_text{
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width:992px){
+    .weather_search_body{
+        max-width: 75% !important;
+    }
+      .weather_body{
+        flex-direction: column;
+      }     
 }

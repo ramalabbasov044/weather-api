@@ -34,7 +34,7 @@ async function findCountryWeather(key){
                     </p>
                 </div>
                 <div class="weather-img">
-                    <div>
+                    <div class="weather_top">
                         <p class="temprature_text">${result.current.condition.text}</p>
                         <img src='${result.current.condition.icon}' />
                     </div>

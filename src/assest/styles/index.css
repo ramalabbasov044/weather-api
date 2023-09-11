@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+    font-family: 'Solway';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100vw;
+    background-image: url('../images/bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 99vh;
+    padding: 100px;
+}
+
+.weather_body{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+.weather_search_body
+{
+    width: 100%;
+    max-width: 409px;
+    padding: 55px 26px 55px 25px;
+    border-radius: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.48);
+    background: linear-gradient(168deg, rgba(255, 255, 255, 0.18) 0.15%, rgba(255, 255, 255, 0.04) 97.5%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+}
+
+.weather_search_form{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 72px;
+    position: relative;
+    border-radius: 24px;
+    border: 1px solid #D3D3D3;
+    background: rgba(68, 68, 60, 0.44);
+}
+
+.weather-search-icon{
+    position: absolute;
+    left: 19px;
+}
+
+.weather-search-input{
+    width: 80%;
+    outline: none;
+    border: 0;
+    background: transparent;
+
+    /*text style*/
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.weather-search-input::placeholder{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.weather_main{
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-result{
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.weather-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather_about{
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-img img{
+    height: 120px;
+}
+
+.weather-temprature{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.88);
+}
